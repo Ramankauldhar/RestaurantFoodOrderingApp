@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant food ordering app showcasing advanced frontend development with animations, performance, and accessibility.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, food ordering, accessibility, animations">
+    <meta name="author" content="Ramandeep">
+    <title>FoodieHub</title>
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="animations.js" as="script">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">FoodieHub</a>
+            <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Delicious Food Delivered to Your Doorstep</h1>
+            <p>Explore our menu and enjoy your favorite meals today.</p>
+            <button class="cta-button">Order Now</button>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-filter">
+                <input type="text" placeholder="Search food items..." id="search-bar" aria-label="Search food items">
+                <select id="cuisine-filter" aria-label="Filter by cuisine">
+                    <option value="">All Cuisines</option>
+                    <option value="italian">Italian</option>
+                    <option value="indian">Indian</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <!-- JavaScript Populated Food Cards -->
+            </div>
+        </section>
+
+        <!-- Specials Section -->
+        <section id="specials" class="specials">
+            <h2>Chef's Specials</h2>
+            <div class="special-items">
+                <!-- Special Items with Parallax Effect -->
+            </div>
+        </section>
+
+        <!-- Table Reservation (3D View) -->
+        <section class="reservation">
+            <h2>Reserve Your Table</h2>
+            <div id="three-d-view">
+                <!-- Three.js implementation -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We bring you the best food experience with quality ingredients and impeccable service.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FoodieHub. All rights reserved.</p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="animations.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
